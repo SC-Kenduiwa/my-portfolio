@@ -1,0 +1,94 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aqua;
+    margin: auto;
+    padding: 0%;
+}
+header {
+    background-color: aliceblue;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: aqua;
+}
+.top {
+    padding: 20px;
+    background-color: aqua;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#about-me {
+    background-color: aliceblue;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#hobbies {
+    padding: auto;
+    p {
+        font-weight: bold;
+    }
+}
+#Shanice-image {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+}
+
+#spirit-animal {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content; 
+    span {
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    p {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+img {
+    max-height: fit-content;
+    margin-left: 20px;
+    margin-right: none;
+    height: 680px;
+    width: 360px;
+    align-content: flex-start;
+}
+
+h2{
+    text-align: center;
+    color: palevioletred;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.contact {
+    background: aliceblue;
+}
+/*#contact-information {
+    padding: 20px;
+    background-color: aliceblue;
+    color: #fff;
+}.*/
