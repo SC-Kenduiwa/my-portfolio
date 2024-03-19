@@ -35,18 +35,30 @@ nav ul li a:hover {
 #about-me {
     background-color: aliceblue;
     text-align: center;
-    padding-bottom: 20px;
+    padding: 20px;
+    margin: 20px;
 }
 #hobbies {
-    padding: auto;
-    p {
-        font-weight: bold;
-    }
+    margin: 10px 20px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+}
+#hobbies p span{
+    font-weight: bold;
+    text-align: right;
+
+}
+#about-me p {
+    font-weight: bold;
 }
 #Shanice-image {
     margin-left: auto;
-    margin-right: auto;
-    max-width: fit-content;
+    /*max-width: fit-content;*/
+}
+#Shanice-image img{
+    width: 350px;
+    height: 380px;
 }
 
 #spirit-animal {
@@ -54,28 +66,38 @@ nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     max-width: fit-content; 
-    span {
-        font-weight: bold;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    p {
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+    text-align: center;
+
+}
+.my-spirit-animal{
+    margin:15px;
+    padding: 20px;
+}
+.my-spirit-animal span{
+    font-weight: bold;
+    text-align: center;
+}
+.my-spirit-animal p{
+    padding: 20px;
+    background-color: aliceblue;
 }
 
-img {
-    max-height: fit-content;
+/*p {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: aliceblue;
+}*/
+
+#spirit-animal img {
+    /*max-height: fit-content;*/
     margin-left: 20px;
     margin-right: none;
-    height: 680px;
+    height: 380px;
     width: 360px;
-    align-content: flex-start;
+    /*align-content: flex-start;*/
 }
 
 h2{
@@ -92,3 +114,61 @@ h2{
     background-color: aliceblue;
     color: #fff;
 }.*/
+
+/*form*/
+.container form {
+    width: 90%;
+    max-width: 500px;
+    padding: 50px 30px 20px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.input-group label{
+    flex-basis: 28%;
+}
+.input-group input, .input-group textarea{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+}
+::placeholder{
+    font-size: 14px;
+}
+form button{
+    background: aqua;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+.input-group span{
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: red;
+}
+#submit-error{
+    color: red;
+}

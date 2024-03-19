@@ -21,7 +21,7 @@
     <main>
         <div class="top">
             <div id="Shanice-image">
-                <h2>Shanice Image</h2>
+                <h2>This is Me</h2>
                 <img src="./00dfaa7e-3680-4603-bad9-44fe6e67eccd.jpeg" alt="shanice image">
             </div>
     
@@ -32,26 +32,30 @@
         </div>
         
         <div id="hobbies">
-            <h2>Hobbies</h2>
-            <p>My hobbies include;</p>
-            <ol>
+            <div>
+                <h2>Hobbies</h2>
+            <p><span>My Hobbies include</span></p>
+            <ol> 
                 <li>Swimming</li>
                 <li>Dancing</li>
                 <li>Watching Romcoms </li>
                 <li>Eating Out</li>
                 <li>Singing</li>
             </ol>
+            </div>
+            
         </div>
         
         <div id="spirit-animal">
-            <div>
-                <img src="./GettyImages-909948608-5c69cd9446e0fb0001560d1a.jpg" alt="Horse">  
-            </div>
-            <div>
-                <h2>spirit-animal</h2>
-            <p><span>Why the Horse?</span></p>
-            <p>The Horse symbolizes passion and is often associated with travel and adventure. It's an energetic spirit animal that brings power and strong emotions, just like Leo. The spirit of the Horse can sometimes help you control your feelings and desires.</p>
-            </div>
+            <img src="./GettyImages-909948608-5c69cd9446e0fb0001560d1a.jpg" alt="Horse">
+           <div class="my-spirit-animal">
+            <h2> Spirit Animal</h2>
+            <p><span> Why the horse?</span><br>
+                The Horse symbolizes passion and is often associated
+                 with travel and adventure. It's an energetic spirit animal that brings power and strong emotions,
+                  just like Leo. The spirit of the Horse can sometimes help you control your feelings and desires.
+            </p>
+           </div>
         </div>
 
     </main>
@@ -66,8 +70,39 @@
                 <a href="https://www.linkedin.com/in/shanice-chebet-kenduiwa-241522204/?originalSubdomain=ke">linkedin</a>
     
             </div>
+
+            <div class="container">
+                <h2>Contact me!</h2>
+                <form>
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                        <span id="name-error"></span>
+                      </div>
+                    <div class="input-group">
+                      <label>Phone No.</label>
+                      <input type="tel" placeholder="123 456 7890" id="phone-number" onkeyup="validatePhoneNumber()">
+                      <span id="phone-error"></span>
+                      </div>
+                    <div class="input-group">
+                        <label>Email Id</label>
+                        <input type="email" placeholder="Enter Email" id="email" onkeyup="validateEmail()">
+                        <span id="email-error"></span>
+                      </div> 
+                    <div class="input-group">
+                        <label>Your Message</label>
+                        <textarea rows="5" placeholder="Enter your message"></textarea>
+                        <span id="message-error"></span>
+                      </div>
+
+                      <button>Submit</button>
+                      <span id="submit-error"></span>
+
+                </form>
+            </div>
         </div>
    
     </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
